@@ -165,10 +165,8 @@ header*/
     padding-bottom: 32px;
 }
 .pin {
-    display: inline-flex;
-    align-items: center;
+    display: inline;
     margin-right: 30px;
-   /* padding: 10px 10px;*/
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -203,8 +201,8 @@ header*/
     margin-right: 10px;
 }
 .let {
-    width: 16px;
-    height: 11px;
+   /* width: 16px;
+    height: 11px;*/
     margin-right: 10px;
 }
 .smart {
@@ -323,7 +321,8 @@ header*/
 }
 /* портфолио кнопки */
 .box-button {
-    display: flex;    
+    display: flex;
+
 }
 /* портфолио кнопки */
 .list-buttons li:not(:last-child) {
@@ -332,19 +331,15 @@ header*/
 /* портфолио кнопки */
 .butt {
     display: flex;
-    justify-content: space-between;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-    color: var(--dark-color);
-    padding-top: 6px;
-    padding-right: 12px;
-    padding-bottom: 6px;
-    padding-left: 12px;
+    justify-content: center ;
+    height: 38px;
+    border-color: #F5F4FA;
+    border-style: solid;
+    border-width: 1px;
+    background: #F5F4FA;
     border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
 }
 /* портфолио кнопки */
 .butt :hover {
@@ -353,6 +348,18 @@ header*/
     box-sizing: inherit;
     border-radius: 4px;    
 }
+/*.elements-projects {
+    background: #e8e8e8;
+    text-align: center;
+  }
+  .elements-projects {
+    background: white;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }*/
 
 
 /* главная шапка навигация */
@@ -364,7 +371,6 @@ header*/
 .container-portfolio {
     display: flex; 
     width: 1170px;
-    margin-bottom: 94px;
     background-color: var(--white-color);
 }
 
@@ -466,8 +472,14 @@ header*/
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark-color);
+}/* линия */
+.line {
+    width: 1600px;
+    color: var(--main-color);
+    height: 0,5px;
+    margin-bottom: 93px;
+    background-color: var(--main-color);
 }
-
 /* портфолио проэкты */
 .list-of-projects {
     display: flex;
@@ -494,6 +506,9 @@ header*/
 /* портфолио проэкты */
 .elements-projects:nth-last-child(-n+3) {
     margin-bottom: 0;
+}
+.elements-projects:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 /* футер */
 .dark-background {
