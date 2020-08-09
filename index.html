@@ -14,7 +14,7 @@
     
     <header>
       <div class="container">
-        <div class="container-block">
+        
           <nav class="container-nav">
             <a class="logotype" href="/">
               <span class="logo">Web</span> 
@@ -27,16 +27,20 @@
               <li class="menu"><a href="#" class="link" >Контакты</a></li>
             </ul>
           
-            <div class="adr">          
-              <a href="mailto:info@devstudio.com" class="adr-mail">
-                <img class="let" src="./images/envelope.svg" alt="letter"> info@devstudio  
+            <div class="adr">                       
+              <a class="pin" href="mailto:info@devstudio.com" class="adr-mail">
+                <svg class="let" width="16" height="11">
+                  <use href="./images/symbol-defs.svg#icon-envelope" alt="letter"></use>
+                </svg> info@devstudio               
               </a>          
-              <a href="tel:+380961111111" class="adr-tel">
-                <img class="smart" src="./images/smartphone.svg" alt="smartphone"> +38 096 111 11 11
+              <a class="key" href="tel:+380961111111" class="adr-tel">
+                <svg class="smart" width="10" height="15">
+                  <use href="./images/symbol-defs.svg#icon-smartphone" alt="smartphone" ></use> 
+                </svg> +38 096 111 11 11                
               </a>
             </div>
           </nav>         
-        </div>
+        
       </div>      
     </header>
     
@@ -45,10 +49,7 @@
     <main>
       <div class="gray-fill">
       <div class="container">
-        <section class="content">
-          <!--<div class="image">-->
-           <!--<img src ="../images/header.jpg" alt="headerphoto "> -->
-         <!-- </div>-->
+        <section class="content">        
             <h1 class="main-content">эффективные решения для вашего бизнеза</h1>
             <button class="order-button">заказать услугу</button>
                 
@@ -62,7 +63,12 @@
          <!-- <h2 class="topic1">особенности</h2>-->
             <ul class="title-features list">
               <li class="features">
-                  <img class="icon" src="./images/antenna1.png" alt="антенна" />
+                <div class="features-icon">
+                  <svg class="icon"    height="70">
+                    <use href="./images/symbol-defs.svg#icon-antenna" alt="антенна"></use>
+                  </svg>
+                </div>
+                  <!--<img class="icon" src="./images/antenna.svg" alt="антенна" />-->
                   <h3 class="chapter1">Внимание к деталям</h3>
                   <p class="rubric">
                       Идейные соображения, а также начало повседневной работы по
@@ -70,7 +76,12 @@
                   </p>
               </li>
               <li class="features">
-                  <img class="icon" src="./images/clock1.png" alt="часы" />
+                <div class="features-icon">
+                <svg class="icon"  height="70">
+                  <use href="./images/symbol-defs.svg#icon-clock" alt="часы"></use>
+                </svg>
+              </div>
+                  <!--<img class="icon" src="./images/clock.svg" alt="часы" />-->
                   <h3 class="chapter1">Пунктуальность</h3>
                   <p class="rubric">
                     Задача организации, в особенности же рамки и место обучения кадров
@@ -78,7 +89,12 @@
                   </p>
               </li>
               <li class="features">
-                  <img class="icon" src="./images/diagram1.png" alt="диаграмма" />
+                <div class="features-icon">
+                <svg class="icon"  height="70">
+                  <use href="./images/symbol-defs.svg#icon-diagram" alt="диаграмма"></use>
+                </svg>
+              </div>
+                  <!--<img class="icon" src="./images/diagram.svg" alt="диаграмма" />-->
                   <h3 class="chapter1">Планирование</h3>
                   <p class="rubric">
                     Равным образом консультация с широким активом в значительной степени
@@ -86,7 +102,12 @@
                   </p>
               </li>
               <li class="features">
-                    <img class="icon" src="./images/astronaut1.png" alt="астронавт" />
+                <div class="features-icon">
+                <svg class="icon"  height="70">
+                  <use href="./images/symbol-defs.svg#icon-astronaut" alt="астронавт"></use>
+                </svg>
+              </div>
+                   <!-- <img class="icon" src="./images/astronaut.svg" alt="астронавт" />-->
                   <h3 class="chapter1">Современные технологии</h3>
                   <p class="rubric">
                     Значимость этих проблем настолько очевидна, что реализация плановых
@@ -101,7 +122,7 @@
      <!-- чем мы занимаемся -->
      <section>
          <div class="container">
-            <div class="container-work">
+            <div>
             <h2 class="topic">Чем мы занимаемся</h2>
               <ul class="title-works1 list">
                 <div class="hobby">
@@ -140,23 +161,31 @@
                     <p class="rubric1">Project Designer</p>
                       <ul class="social-links-team list">
                         <li>
-                          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                            <img class="link"src="./images/instagram2.svg" alt="instagram">
+                          <a href="https://www.instagram.com/" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">                           
+                              <use href="./images/symbol-defs.svg#icon-instagram2"> alt="instagram"</use>
+                            </svg>
                           </a>
                         </li>
                         <li>
-                          <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                            <img class="link" src="./images/twitter1.svg" alt="twitter">
+                          <a href="https://twitter.com/" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-twitter1">alt="twitter" </use>
+                            </svg> 
                           </a> 
                         </li>
                         <li>
-                          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                            <img  class="link"src="./images/facebook1.svg" alt="facebook">
+                          <a href="https://www.facebook.com/" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-facebook1">alt="facebook" </use>
+                            </svg>
                           </a>
                         </li>
                         <li>
-                          <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener">
-                            <img  class="link"src="./images/linkedin1.svg" alt="linkedin">
+                          <a href="https://linkedin.com" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-linkedin1">alt="linkedin" </use>
+                            </svg>
                           </a>
                         </li>
                       </ul>  
@@ -168,23 +197,31 @@
                     <p class="rubric1">Frontend  Developer</p>
                       <ul class="social-links-team list">
                         <li>
-                          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                            <img  class="link" src="./images/instagram2.svg" alt="instagram">
+                          <a href="https://www.instagram.com/" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">                           
+                              <use href="./images/symbol-defs.svg#icon-instagram2"> alt="instagram"</use>
+                            </svg>
                           </a>
                         </li>
                         <li>
-                          <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                            <img class="link" src="./images/twitter1.svg" alt="twitter">
+                          <a href="https://twitter.com/" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-twitter1">alt="twitter" </use>
+                            </svg> 
                           </a> 
                         </li>
                         <li>
-                          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                            <img  class="link" src="./images/facebook1.svg" alt="facebook">
+                          <a href="https://www.facebook.com/" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-facebook1">alt="facebook" </use>
+                            </svg>
                           </a>
                         </li>
                         <li>
-                          <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener">
-                            <img class="link" src="./images/linkedin1.svg" alt="linkedin">
+                          <a href="https://linkedin.com" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-linkedin1">alt="linkedin" </use>
+                            </svg>
                           </a>
                         </li>
                       </ul> 
@@ -196,23 +233,31 @@
                     <p class="rubric1">Marketing</p>
                       <ul class="social-links-team list">
                         <li>
-                          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                            <img class="link" src="./images/instagram2.svg" alt="instagram">
+                          <a href="https://www.instagram.com/" class="links" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">                           
+                              <use href="./images/symbol-defs.svg#icon-instagram2"> alt="instagram"</use>
+                            </svg>
                           </a>
                         </li>
                         <li>
-                          <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                            <img class="link" src="./images/twitter1.svg" alt="twitter">
+                          <a href="https://twitter.com/" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-twitter1">alt="twitter" </use>
+                            </svg> 
+                          </a> 
+                        </li>
+                        <li>
+                          <a href="https://www.facebook.com/" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-facebook1">alt="facebook" </use>
+                            </svg>
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                            <img class="link" src="./images/facebook1.svg" alt="facebook">
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener">
-                            <img class="link" src="./images/linkedin1.svg" alt="linkedin">
+                          <a href="https://linkedin.com" class="links" target="_blank" rel="noreferrer noopener">
+                            <svg class="link" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-linkedin1">alt="linkedin" </use>
+                            </svg>
                           </a>
                         </li>
                       </ul> 
@@ -224,23 +269,31 @@
                       <p class="rubric1">UI Designer</p>
                         <ul class="social-links-team list">
                           <li>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                              <img class="link" src="./images/instagram2.svg" alt="instagram">
+                            <a href="https://www.instagram.com/" class="links" target="_blank" rel="noreferrer noopener">
+                              <svg class="link" width="20" height="20">                           
+                                <use href="./images/symbol-defs.svg#icon-instagram2"> alt="instagram"</use>
+                              </svg>
                             </a>
                           </li>
                           <li>
-                            <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                              <img class="link" src="./images/twitter1.svg" alt="twitter">
+                            <a href="https://twitter.com/" class="links" class="links" target="_blank" rel="noreferrer noopener">
+                              <svg class="link" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter1">alt="twitter" </use>
+                              </svg> 
+                            </a> 
+                          </li>
+                          <li>
+                            <a href="https://www.facebook.com/" class="links" class="links" target="_blank" rel="noreferrer noopener">
+                              <svg class="link" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook1">alt="facebook" </use>
+                              </svg>
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                              <img class="link" src="./images/facebook1.svg" alt="facebook">
-                            </a>
-                          </li>
-                          <li>
-                            <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener">
-                              <img class="link" src="./images/linkedin1.svg" alt="linkedin">
+                            <a href="https://linkedin.com" class="links" target="_blank" rel="noreferrer noopener">
+                              <svg class="link" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin1">alt="linkedin" </use>
+                              </svg>
                             </a>
                           </li>
                         </ul> 
@@ -258,32 +311,44 @@
             <ul class="costumer-list list">
               <li class="all-costumer">
                 <a href="#">
-                  <img class="img-costumer" src="./images/logo1.svg" alt="logotype">
+                  <svg class="img-costumer" width="44" height="50">
+                    <use href="./images/symbol-defs.svg#icon-logo1" >alt="logotype"</use>
+                  </svg> 
                 </a>
               </li>           
               <li class="all-costumer">
                 <a href="#">
-                  <img class="img-costumer" src="./images/logo2.svg" alt="logotype">
+                  <svg class="img-costumer" width="40" height="52">
+                    <use href="./images/symbol-defs.svg#icon-logo2">alt="logotype"</use>
+                  </svg> 
                 </a>
               </li>
               <li class="all-costumer">
                 <a href="#">
-                  <img class="img-costumer" src="./images/logo3.svg" alt="logotype">
+                  <svg class="img-costumer" width="41" height="43">
+                    <use href="./images/symbol-defs.svg#icon-logo3">alt="logotype"</use>
+                  </svg> 
                 </a>
               </li>
               <li class="all-costumer">
                 <a href="#">
-                  <img class="img-costumer" src="./images/logo4.svg" alt="logotype">
+                  <svg class="img-costumer" width="80" height="42">
+                    <use href="./images/symbol-defs.svg#icon-logo4">alt="logotype"</use>
+                  </svg> 
                 </a>
               </li>
               <li class="all-costumer">
                 <a href="#">
-                  <img class="img-costumer" src="./images/logo5.svg" alt="logotype">
+                  <svg class="img-costumer" width="59" height="47">
+                    <use href="./images/symbol-defs.svg#icon-logo5">alt="logotype"</use>
+                  </svg> 
                 </a>
               </li>
               <li class="all-costumer">
                 <a href="#">
-                  <img class="img-costumer" src="./images/logo6.svg" alt="logotype">
+                  <svg class="img-costumer" width="88" height="45">
+                    <use href="./images/symbol-defs.svg#icon-logo6">alt="logotype"</use>
+                  </svg> 
                 </a>
               </li>
             </ul>
@@ -296,7 +361,7 @@
       <div class="container">
           <div class="footer-content">
               <div class="footer-adr">
-                  <a class="footer-logotype" href="Web Studio">
+                  <a class="footer-logotype" href="/">
                       <span class="footer-logo">Web</span> 
                       <span class="footer-log">Studio</span>
                   </a> 
@@ -310,21 +375,32 @@
                   <p class="follow">присоединяйтесь</p>
                       <ul class="social-links list">
                           <li class="footer-icon">
-                              <a href="https://www.instagram.com/" class="link"target="_blank" rel="noreferrer noopener">
-                                  <img class="link" src="./images/instagram2.svg" alt="instagram"></a>         
+                            <a href="https://www.instagram.com/" class="footer-links" target="_blank" rel="noreferrer noopener">
+                              <svg class="footer-link" width="20" height="20">                           
+                                <use href="./images/symbol-defs.svg#icon-instagram2"> alt="instagram"</use>
+                              </svg>
+                            </a>       
                           </li>
                           <li class="footer-icon">
-                              <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                                  <img class="link" src="./images/twitter1.svg" alt="twitter"></a>          
+                            <a href="https://twitter.com/"  class="footer-links" target="_blank" rel="noreferrer noopener">
+                              <svg class="footer-link" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter1">alt="twitter" </use>
+                              </svg> 
+                            </a>           
                           </li>
                           <li class="footer-icon">
-                              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                                  <img class="link" src="./images/facebook1.svg" alt="facebook"> </a>       
+                            <a href="https://www.facebook.com/"  class="footer-links" target="_blank" rel="noreferrer noopener">
+                              <svg class="footer-link" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook1">alt="facebook" </use>
+                              </svg>
+                            </a>      
                           </li>
                           <li class="footer-icon">
-                              <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener">
-                                  <img class="link" src="./images/linkedin1.svg" alt="linkedin">
-                              </a> 
+                            <a href="https://linkedin.com" class="footer-links" target="_blank" rel="noreferrer noopener">
+                              <svg class="footer-link" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin1">alt="linkedin" </use>
+                              </svg>
+                            </a>
                           </li>
                       </ul>
               </div>
