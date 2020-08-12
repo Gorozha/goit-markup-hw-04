@@ -22,9 +22,12 @@ html {
     --white-color: #ffffff;
 }
 body {
-    margin: 0;
+    /*margin: 0;*/
     color: var(--dark-color);
     background-color: var(--white-color);
+    max-width: 1600px;
+    margin: auto;
+    border: solid var(--main-color) 1px;
 }
 a {
     text-decoration: none;
@@ -69,6 +72,29 @@ p {
     margin-right: auto;
     /*margin-bottom: 0;*/
 }
+/*эффект подчеркивания ссылки*/
+/*.nav-links {
+    line-height: 4px;
+    display: inline-block;
+    color:var(--dark-color);
+    text-decoration:none;
+    cursor: pointer;
+}*/
+/*эффект подчеркивания ссылки*/
+/*.nav-links:after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 0%;
+    background-color: green;
+    transition: width 3s ease-in-out;
+}*/
+/*эффект подчеркивания ссылки*/
+/*.nav-links .link:hover,
+.nav-links .link:focus {
+    width: 100%;
+    color: var(--accent-color);
+}*/
 
 /* header */
 .container-block {
@@ -144,10 +170,12 @@ header*/
 .nav-links .menu:last-child {
     margin-right: 0;
 }
+
 /* header */
 .nav-links .link:hover,
 .nav-links .link:focus {
     color:var(--accent-color);
+   /* text-decoration: underline;*/
 }
 /* header */
  .adr {
@@ -165,7 +193,7 @@ header*/
     padding-bottom: 32px;
 }
 .pin {
-    display: inline;
+    /*display: inline;*/
     margin-right: 30px;
     color: black;
     text-decoration: none;
@@ -229,9 +257,11 @@ header*/
     color: var(--main-color);        
 }
 /* header */
-.pin:hover,
-.pin:focus {
+.pin:hover{
     color:var(--accent-color);
+}
+.let-pin:hover {
+    fill:var(--accent-color);
 }
 /* header */
 .key:hover,
@@ -379,7 +409,7 @@ header*/
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
-    margin-bottom: 94px;
+   /* margin-bottom: 94px;*/
 }
 
 /*особенности*/
@@ -474,11 +504,12 @@ header*/
     color: var(--dark-color);
 }/* линия */
 .line {
-    width: 1600px;
+    width: 100%;
     color: var(--main-color);
     height: 0,5px;
     margin-bottom: 93px;
     background-color: var(--main-color);
+    margin-top: 0;
 }
 /* портфолио проэкты */
 .list-of-projects {
@@ -724,7 +755,7 @@ header*/
 /* наша команда */
 .grey-background {
     background: #F5F4FA;
-    width: 1600px;
+    width: 100%;
     margin: auto;
 }
 /* наша команда */
